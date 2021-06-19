@@ -6,7 +6,8 @@
   "scripts": {
     "test": "xo && npm run cover",
     "cover": "nyc --reporter=lcov --reporter=html --reporter=text ava",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v"
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
+	"start": "node ./lib/cli.js"
   },
   "keywords": [
     "code",
@@ -98,7 +99,7 @@
     "send": "^0.17.1",
     "snyk": "^1.266.0",
     "term-img": "^4.1.0",
-	"markdown-it-plantuml":"^1.4.1"
+    "markdown-it-plantuml": "^1.4.1"
   },
   "devDependencies": {
     "all-contributors-cli": "^6.11.2",
